@@ -156,6 +156,8 @@ spec:
   565  kubectl rollout history deployment kubeserve
   566  kubectl rollout undo deployment kubeserve --to-revision=1
   567  kubectl describe deployment kubeserve | less
+  
+  gcloud compute firewall-rules create rule1 --allow tcp:30008
 
 
 Horizontal Pod AutoScaller:
